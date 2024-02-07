@@ -1,0 +1,19 @@
+---
+import heroImage from '@assets/profile-square.webp';
+import { Image } from 'astro:assets';
+import headshot from '../images/profile-square.webp';
+---
+
+<section
+	class="flex h-screen flex-col-reverse items-center justify-center text-center lg:flex-row"
+>
+  <div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center">
+    <Image src={headshot} alt="Matt Pahuta" width="200" height="200" />
+  </div>
+  <div class="mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2">
+    <p>Hello! My name is</p>
+    <h1 class="mb-10 font-monospace text-3xl text-black dark:text-white lg:text-5xl">Matt Pahuta.</h1>
+    <p>Frontend web developer.</p>
+  </div>
+
+</section>
