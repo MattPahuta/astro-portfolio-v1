@@ -4,11 +4,9 @@ import { Image } from 'astro:assets';
 import headshot from '../images/profile-square.webp';
 ---
 
-<section
-	class="flex h-screen flex-col-reverse items-center justify-center text-center lg:flex-row"
->
-  <div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center">
-    <Image src={headshot} alt="Matt Pahuta" width="200" height="200" />
+<section class="flex flex-col lg:h-screen items-center justify-center text-center md:flex-row">
+  <div data-testid="hero-img" class="md:flex-shrink-0">
+    <Image class="aspect-square rounded-2xl sm:w-56 object-cover shadow-lg shadow-slate-400 dark:shadow-slate-950" src={headshot} alt="Matt Pahuta" />
   </div>
   <div class="mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2">
     <p>Hello! My name is</p>

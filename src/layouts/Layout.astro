@@ -22,7 +22,9 @@ const { title = 'Matt Pahuta | Web developer' } = Astro.props as LayoutProps;
 	</head>
 	<body class="mx-auto max-w-screen-xl bg-raisin px-5 font-sans text-white xs:text-[16px] md:text-[18px]">
 		<Navbar />
-		<slot />
+		<main >
+			<slot />
+		</main>
 		<Footer />
 		<style is:global>
 			/* Improve Page speed */
