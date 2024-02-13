@@ -1,17 +1,18 @@
 ---
-import heroImage from '@assets/profile-square.webp';
 import { Image } from 'astro:assets';
-import headshot from '../images/profile-square.webp';
+import avatar from '../assets/images/profile-square.webp';
 ---
 
-<section class="flex flex-col lg:h-screen items-center justify-center text-center md:flex-row">
-  <div data-testid="hero-img" class="md:flex-shrink-0">
-    <Image class="aspect-square rounded-2xl sm:w-56 object-cover shadow-lg shadow-slate-400 dark:shadow-slate-950" src={headshot} alt="Matt Pahuta" />
-  </div>
-  <div class="mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2">
-    <p>Hello! My name is</p>
-    <h1 class="mb-10 font-monospace text-3xl text-black dark:text-white lg:text-5xl">Matt Pahuta.</h1>
-    <p>Frontend web developer.</p>
-  </div>
+<section class="mx-auto max-w-screen-lg px-3 py-6">
+  <div class="flex flex-col items-center md:flex-row md:justify-between md:gap-x-24">
+    <!-- hero text -->
+    <div>
+      <h1 class="font-monospace font-bold text-3xl">Hi, I'm Matt | Frontend Developer</h1>
+      <p class="mt-6 text-xl leading-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.<p>
+    </div>
 
+    <div data-testid="hero-img" class="shrink-0">
+      <Image class="aspect-square rounded-2xl object-cover w-80 shadow-lg shadow-slate-400 dark:shadow-slate-950" src={avatar} alt="Matt Pahuta" />
+    </div>
+  </div>
 </section>
