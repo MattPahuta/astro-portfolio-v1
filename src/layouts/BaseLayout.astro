@@ -1,7 +1,7 @@
 ---
-import Navbar from "../components/Navbar.astro";
+
+import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import '../styles/global.css';
 
 export interface LayoutProps {
 	title: string;
@@ -20,15 +20,15 @@ const { title = 'Matt Pahuta | Web developer' } = Astro.props as LayoutProps;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-raisin font-sans text-white xs:text-[16px] md:text-[18px]">
-		<Navbar />
+	<body>
+    
+		<Header />
 		<main>
 			<slot />
 		</main>
 		<Footer />
+
 		<style is:global>
-			/* Improve Page speed */
-			/* https://css-tricks.com/almanac/properties/c/content-visibility/ */
 			img {
 				content-visibility: auto;
 			}
