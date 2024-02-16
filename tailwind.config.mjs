@@ -1,15 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
+
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 export default {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-	theme: {
-		extend: {
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  theme: {
+    extend: {
 			fontFamily: {
 				'sans': ['Inter', ...defaultTheme.fontFamily.sans],
-				'mono': ['Source Code Pro', ...defaultTheme.fontFamily.mono]
+				'mono': ['"Source Code Pro"', ...defaultTheme.fontFamily.mono]
 			}
 		},
-	},
-	plugins: [],
-}
+  },
+  plugins: [],
+};

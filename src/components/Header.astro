@@ -17,32 +17,35 @@ const menuitems = [
 ];
 ---
 
-<header class="lg:flex p-5 gap-5">
-  <Astronav>
-    <div class="flex w-full justify-between">
-      <a class="font-mono">&#123;matt.pahuta&#125;</a>
-      <div class="block lg:hidden">
-        <MenuIcon class="w-4 h-4 text-gray-800" />
+<header>
+  <a href="#main-content" id="skip-to-content" class="sr-only">Skip to content</a>
+  <div class="max-w-screen-lg mx-auto lg:flex px-4 py-8 gap-5">
+    <Astronav>
+      <div class="flex w-full justify-between">
+        <a class="font-mono">&#123;matt.pahuta&#125;</a>
+        <div class="block lg:hidden">
+          <MenuIcon class="w-8 h-8 text-gray-800" />
+        </div>
       </div>
-    </div>
-    <MenuItems class="hidden lg:flex">
-			<ul class="flex flex-col lg:flex-row lg:gap-3">
-				{
-					menuitems.map((item) => (
-						<>
-							<li>
-								<a
-									aria-label="navigation link"
-									href={item.path}
-									class="flex py-2 hover:text-green-600 lg:px-3"
-								>
-									{item.title}
-								</a>
-							</li>
-						</>
-					))
-				}
-			</ul>
-    </MenuItems>
-  </Astronav>
+      <MenuItems class="hidden lg:flex">
+        <ul class="flex flex-col lg:flex-row lg:gap-3">
+          {
+            menuitems.map((item) => (
+              <>
+                <li>
+                  <a
+                    aria-label="navigation link"
+                    href={item.path}
+                    class="flex py-2 hover:text-green-600 lg:px-3"
+                  >
+                    {item.title}
+                  </a>
+                </li>
+              </>
+            ))
+          }
+        </ul>
+      </MenuItems>
+    </Astronav>
+  </div>
 </header>
