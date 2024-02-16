@@ -8,7 +8,7 @@ export default {
     extend: {
 			fontFamily: {
 				'sans': ['Inter', ...defaultTheme.fontFamily.sans],
-				'mono': ['"Source Code Pro"', ...defaultTheme.fontFamily.mono]
+				'mono': ['Inconsolata', ...defaultTheme.fontFamily.mono],
 			}
 		},
   },

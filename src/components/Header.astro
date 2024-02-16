@@ -22,9 +22,9 @@ const menuitems = [
   <div class="max-w-screen-lg mx-auto lg:flex px-4 py-8 gap-5">
     <Astronav>
       <div class="flex w-full justify-between">
-        <a class="font-mono">&#123;matt.pahuta&#125;</a>
+        <a class="font-mono text-xl font-medium text-emerald-500">&#123;matt.pahuta&#125;</a>
         <div class="block lg:hidden">
-          <MenuIcon class="w-8 h-8 text-gray-800" />
+          <MenuIcon class="w-8 h-8 text-gray-800 dark:text-emerald-500" />
         </div>
       </div>
       <MenuItems class="hidden lg:flex">
@@ -36,7 +36,7 @@ const menuitems = [
                   <a
                     aria-label="navigation link"
                     href={item.path}
-                    class="flex py-2 hover:text-green-600 lg:px-3"
+                    class="flex py-2 hover:text-emerald-500 lg:px-3"
                   >
                     {item.title}
                   </a>
