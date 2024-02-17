@@ -1,7 +1,9 @@
 ---
 import { Image } from 'astro:assets';
-import avatar from '../assets/images/profile-square.webp';
 import { Icon } from 'astro-icon/components'
+import avatar from '../assets/images/profile-square.webp';
+import Socials from './Socials.astro'
+
 ---
 
 <section class="mx-auto max-w-screen-lg px-4 py-6">
@@ -13,10 +15,27 @@ import { Icon } from 'astro-icon/components'
       <p class="mt-6 text-lg leading-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.<p>
       <div>
       </div>
+
+      <Socials />
     </div>
     <!-- hero image -->
     <div data-testid="hero-img" class="shrink-0">
       <Image class="aspect-square rounded-2xl object-cover w-80 shadow-lg shadow-slate-400 dark:shadow-slate-950 hover:rotate-3" src={avatar} alt="Matt Pahuta" />
     </div>
+  </div>
+  <div>
+
+
+    <!-- <Icon 
+      name="github-icon"
+      title="github" 
+      class="size-8 text-emerald-500"
+    />
+    <Icon 
+      name="twitter-x"
+      title="github" 
+      class="size-8 text-emerald-500"
+    /> -->
+
   </div>
 </section>
