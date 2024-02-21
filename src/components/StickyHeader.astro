@@ -1,0 +1,52 @@
+---
+import { Astronav, StickyHeader, MenuIcon, MenuItems} from 'astro-navbar';
+
+const menuitems = [
+	{
+		title: 'About',
+		path: '#about',
+	},
+	{
+		title: 'Projects',
+		path: '#projects',
+	},
+	{
+		title: 'Contact',
+		path: '#contact',
+	},
+];
+---
+
+<StickyHeader 
+  class="sticky top-0 border-b z-20 transition-all"
+  scrollY={50}
+  defaultClass="py-5 border-transparent"
+  activeClass="py-2 bg-white/80 border-gray-200 backdrop-blur-lg">
+  <Astronav>
+    <div class="flex w-full justify-between">
+      <a class="font-mono text-xl font-medium text-emerald-500 hover:text-emerald-100">&#123;matt.pahuta&#125;</a>
+      <div class="block lg:hidden">
+        <MenuIcon class="w-8 h-8 text-gray-800 dark:text-emerald-500" />
+      </div>
+    </div>
+    <MenuItems class="hidden lg:flex">
+      <ul class="flex flex-col lg:flex-row lg:gap-3">
+        {
+          menuitems.map((item) => (
+            <>
+              <li>
+                <a
+                  aria-label="navigation link"
+                  href={item.path}
+                  class="flex py-2 hover:text-emerald-500 lg:px-3"
+                >
+                  {item.title}
+                </a>
+              </li>
+            </>
+          ))
+        }
+      </ul>
+    </MenuItems>
+  </Astronav>
+</StickyHeader>

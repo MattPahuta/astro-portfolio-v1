@@ -1,9 +1,18 @@
 ---
 const year = new Date().getFullYear();
+import { Icon } from 'astro-icon/components'
 ---
+
+<!--❤ -->
 
 <footer class="px-3 p-6">
   <div class="mx-auto max-w-screen-lg border-t border-gray-600 pt-5 text-sm text-center">
-    <p>&copy; {year} <a href="https://github.com/MattPahuta" target="_blank">Matt Pahuta</a>. Made with ❤ in Astro & Tailwind CSS.</p>
+    <p>&copy; {year} <a href="https://github.com/MattPahuta" target="_blank">Matt Pahuta</a>. Made with 
+    <Icon 
+      name="pixelarticons--heart"
+      class="inline size-5 text-emerald-500"
+    /> in Astro & Tailwind CSS.</p>
+
+    
   </div>
 </footer>
