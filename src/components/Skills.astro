@@ -2,20 +2,65 @@
 import { Icon } from 'astro-icon/components'
 ---
 
-<section id="skills">
+<section id="skills" class="py-12">
   <div>
 
   </div>
   <!-- skill badge container grid -->
-  <div class="">
+  <div class="flex items-center justify-center gap-4">
     <!-- skill badge -->
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center justify-center gap-2 min-w-24 min-h-24 rounded-xl bg-slate-600 bg-clip-border shadow-md">
       <Icon
-        name="simple-icons--html5"
+        name="vscode-icons--file-type-html"
         title="HTML"
-        class="size-10"
+        class="size-12 text-slate-200"
       />
-      <span>HTML</span> 
+      <span class="text-sm text-slate-100">HTML</span> 
+    </div>
+    <!-- skill badge -->
+    <div class="flex flex-col items-center justify-center gap-2 min-w-24 min-h-24 rounded-xl bg-slate-600 bg-clip-border shadow-md">
+      <Icon
+        name="vscode-icons--file-type-css"
+        title="CSS"
+        class="size-12 text-slate-200"
+      />
+      <span class="text-sm text-slate-100">CSS</span> 
+    </div>
+    <!-- skill badge -->
+    <div class="flex flex-col items-center justify-center gap-2 min-w-24 min-h-24 rounded-xl bg-slate-600 bg-clip-border shadow-md">
+      <Icon
+        name="vscode-icons--file-type-reactjs"
+        title="JavaScript"
+        class="size-12"
+      />
+      <span class="text-sm text-slate-100">React</span> 
+    </div>
+    <!-- skill badge -->
+    <div class="flex flex-col items-center justify-center gap-2 min-w-24 min-h-24 rounded-xl bg-slate-600 bg-clip-border shadow-md">
+      <Icon
+        name="vscode-icons--file-type-reactjs"
+        title="JavaScript"
+        class="size-12"
+      />
+      <span class="text-sm text-slate-100">React</span> 
+    </div>
+    <!-- skill badge -->
+    <div class="flex flex-col items-center justify-center gap-2 min-w-24 min-h-24 rounded-xl bg-slate-600 bg-clip-border shadow-md">
+      <Icon
+        name="vscode-icons--file-type-astro"
+        title="Astro"
+        class="size-12"
+      />
+      <span class="text-sm text-slate-100">Astro</span> 
+    </div>
+    <!-- skill badge -->
+    <div class="flex flex-col items-center justify-center gap-2 min-w-24 min-h-24 rounded-xl bg-slate-600 bg-clip-border shadow-md">
+      <Icon
+        name="vscode-icons--file-type-tailwind"
+        title="TailwindCSS"
+        class="size-12"
+      />
+      <span class="text-sm text-slate-100">TailwindCSS</span> 
     </div>
   </div>
 </section>
