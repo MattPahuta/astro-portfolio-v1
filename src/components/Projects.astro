@@ -1,6 +1,66 @@
 ---
+const heading = "My Projects";
+
+const projects = [
+  {
+    title: "Frontend Quiz App",
+    slug: "project-1",
+    description: "Test your frontend web development fluency with this quiz app built with React. Developed using semantic HTML, modern CSS, and React.",
+    techStack: ["React", "HTML", "CSS", "Vite"],
+    image: "",
+    imageAlt: "",
+    gitHubUrl: "",
+    liveSiteUrl: ""
+  },
+  {
+    title: "GitHub User Search",
+    slug: "project-2",
+    description: "Search for GitHub users and view their profiles. Built with vanilla JavaScript, semantic HTML, modern CSS, and the GitHub API.",
+    techStack: ["JavaScript", "HTML", "CSS", "API"],
+    image: "",
+    imageAlt: "",
+    gitHubUrl: "",
+    liveSiteUrl: ""
+  },
+  {
+    title: "Tech Book Club",
+    slug: "project-3",
+    description: "Landing page for the Tech Book Club. Built with semantic HTML, modern CSS, and JavaScript.",
+    techStack: ["HTML", "CSS"],
+    image: "",
+    imageAlt: "",
+    gitHubUrl: "",
+    liveSiteUrl: ""
+  },
+  {
+    title: "Planet Fact Site",
+    slug: "project-4",
+    description: "Explore the Solar System with this informative multi-page website built with Astro. Featuring semantic HTML, modern CSS, and JavaScript.",
+    techStack: ["JavaScript", "HTML", "CSS", "Astro"],
+    image: "",
+    imageAlt: "",
+    gitHubUrl: "",
+    liveSiteUrl: ""
+  },
+];
+
+// ToDo: Male projects a list, create ProjectCard component, 
+
 ---
 
 <section class="mx-auto max-w-screen-lg px-3 py-6">
-
+  <div>
+    <h2>{heading}</h2>
+  </div>
+  <div>
+    {projects.map((project) => (
+      <div class="card">
+        <img src={project.image} alt={project.imageAlt}>
+        <h3>
+          <a href={project.liveSiteUrl}>{project.title}</a>
+        </h3>
+      </div>
+      )
+    )}
+  </div>
 </section>
